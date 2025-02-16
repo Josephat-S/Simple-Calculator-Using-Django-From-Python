@@ -1,0 +1,11 @@
+{% extends "base.html" %}
+
+{% block content %}
+<form action="operation" method="GET">
+    <p>Enter 1st Number<input type="number" name="num1"></p><br>
+    <p>Operator    <input type="text" name="operator"></p><br>
+    <p>Enter 2nd Number<input type="number" name="num2"></p>
+    <input type="submit"><br>
+    <p>The answer : {{result}}</p>
+</form>
+{% endblock %}
